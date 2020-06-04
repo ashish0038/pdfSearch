@@ -1,0 +1,15 @@
+
+.pdf_loader{
+    position: relative;
+    .overlay_tag{
+        position: absolute;
+        border: 1px solid red;
+        height: 34px;
+        width: 189px;
+        top: 10%;
+        left: 68px;
+    }
+    .image_loaded{
+        width: 100%;
+    }
+}

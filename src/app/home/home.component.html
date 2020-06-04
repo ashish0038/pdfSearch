@@ -1,0 +1,11 @@
+<h1 class="main-title">Document List</h1>
+<div class="news-box">
+    <div class="news-scroll">
+        <ngx-simplebar [options]="options">
+            <div class="news-list" *ngFor="let news of news$">
+                <a href="/view-document">{{ news.newsTitle }}</a>
+                <p class="news-created">{{ news.newsCreated }}</p>
+            </div>
+        </ngx-simplebar>
+    </div>
+</div>
