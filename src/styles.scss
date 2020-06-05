@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import "./node_modules/font-awesome/scss/font-awesome.scss";
 body {
   margin: 0;
   background: #f3faff;
@@ -6,7 +8,7 @@ body {
 }
 
 .simplebar-scrollbar:before {
-  background-color: #039be5 !important;
+  background-color: #273772 !important;
 }
 
 #container {
@@ -32,7 +34,7 @@ body {
           font-size: 1.5em;
           text-decoration: none;
           font-weight: bold;
-          color: #00a8ff;
+          color: #273772;
         }
 
         ul {

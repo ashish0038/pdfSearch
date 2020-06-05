@@ -1,15 +1,153 @@
-
-.pdf_loader{
+.pdf_loader {
     position: relative;
-    .overlay_tag{
+    overflow: auto;
+    background-image: url("../../assets/images/pdf_bg.png");
+    background-repeat: repeat;
+    padding: 25px 100px;
+    .overlay_tag {
         position: absolute;
         border: 1px solid red;
         height: 34px;
         width: 189px;
-        top: 10%;
-        left: 68px;
+        // top: 2111px;
+        // left: 68px;
     }
-    .image_loaded{
+    .overlay_tag2 {
+        position: absolute;
+        border: 1px solid greenyellow;
+        height: 34px;
+        width: 189px;
+        // top: 751px;
+        // left: 518px;
+    }
+    .image_loaded {
+        // height: 2692px;
+        // width: 2084px;
         width: 100%;
+    }
+    .close_btn {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        background-color: #414f86;
+        padding: 7px 13px;
+        border-radius: 59px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .search_box {
+        background-color: #414f86;
+        transform: translateX(-50%);
+        position: absolute;
+        left: 50%;
+        border-radius: 60px;
+        .form-inline .form-control {
+            border-radius: 60px;
+            height: calc(1.5em + 0.55rem + 0px);
+            margin-left: 3px;
+        }
+        .btn-primary {
+            color: #fff;
+            background-color: #404d87;
+            border-color: #3f4b88;
+            outline: none;
+            &:last-child {
+                border-radius: 50px;
+            }
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+            .fa {
+                font-size: 20px;
+            }
+        }
+    }
+    .search_icon_box {
+        background-color: #404d87;
+        color: #fff;
+        border-radius: 70px;
+        text-align: center;
+        position: absolute;
+        padding: 0px 12px;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            li {
+                cursor: pointer;
+                border-bottom: 1px solid #707bb1;
+                padding: 10px 0px;
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+        .w_text_value {
+            span {
+                display: block;
+                border-top: 1px solid #707bb1;
+            }
+        }
+    }
+}
+.sidebar_nav {
+    background-color: #fff;
+    box-shadow: 3px 0px 3px #ddd;
+    padding: 30px 15px;
+    height: calc(100vh - 57px);
+    min-height: 100%;
+    .nav_title {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0px;
+    }
+    .custom_arrow {
+        color: #828da8;
+        font-size: 32px;
+        margin: 0px 10px;
+        cursor: pointer;
+    }
+}
+.word_section {
+    margin-top: 20px;
+    .word_title {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0px;
+        color: #828da8;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    .page_number {
+        font-size: 14px;
+        color: #828da8;
+    }
+    .word-list {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        .word_list_code {
+            font-size: 16px;
+            color: #0000f2;
+            margin: 0px;
+            cursor: pointer;
+        }
+        .finding_words_list {
+            font-size: 14px;
+            list-style: none;
+            margin: 0px;
+            margin-top: 10px;
+            padding: 0px;
+            li {
+                cursor: pointer;
+            }
+        }
+    }
+    .mt-10 {
+        margin-top: 10px;
     }
 }

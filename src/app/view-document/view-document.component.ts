@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-document.component.scss']
 })
 export class ViewDocumentComponent implements OnInit {
-
+  options = { autoHide: false, scrollbarMinSize: 100 };
   constructor() { }
 
   ngOnInit() {

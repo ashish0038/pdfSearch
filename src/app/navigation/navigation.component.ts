@@ -35,7 +35,7 @@ export class NavigationComponent implements OnInit {
 
     const menu = [
       {
-        label: 'Documents',
+        label: 'My Documents',
         icon: 'Documents',
         link: '/home',
       },

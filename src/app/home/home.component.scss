@@ -1,5 +1,5 @@
 .simplebar-scrollbar:before {
-  background-color: #039be5 !important;
+  background-color: #273772 !important;
 }
 .main-title{
   width: 95%;
@@ -41,7 +41,7 @@
       border-bottom: 0.5px solid transparent;
     }
     & a {
-      color: #039be5;
+      color: #273772;
     }
     .news-text {
       color: #828282;
@@ -69,14 +69,14 @@
     background: transparent;
     border-radius: 50px;
     margin: 0px auto;
-    border: 1px solid #039be5;
-    color: #039be5;
+    border: 1px solid #273772;
+    color: #273772;
     margin-top: 20px;
     &:hover {
-      background-color: #039be5;
+      background-color: #273772;
       color: #fff;
       transition: 0.2s ease-in-out;
-      box-shadow: 0px 0px 8px 0px #039be5;
+      box-shadow: 0px 0px 8px 0px #273772;
     }
   }
 }
