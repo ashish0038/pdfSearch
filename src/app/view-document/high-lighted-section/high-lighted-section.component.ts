@@ -12,6 +12,7 @@ export class HighLightedSectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

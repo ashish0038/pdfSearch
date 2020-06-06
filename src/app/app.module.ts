@@ -10,6 +10,9 @@ import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ViewDocumentComponent } from './view-document/view-document.component';
 import { HighLightedSectionComponent } from './view-document/high-lighted-section/high-lighted-section.component';
+import { DocumentSearchBoxComponent } from './view-document/document-search-box/document-search-box.component';
+import { DocumentSearchIconComponent } from './view-document/document-search-icon/document-search-icon.component';
+import { PageNavigationBarComponent } from './view-document/page-navigation-bar/page-navigation-bar.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { HighLightedSectionComponent } from './view-document/high-lighted-sectio
     NavigationComponent,
     ViewDocumentComponent,
     HighLightedSectionComponent,
+    DocumentSearchBoxComponent,
+    DocumentSearchIconComponent,
+    PageNavigationBarComponent,
   ],
   imports: [
     BrowserModule,

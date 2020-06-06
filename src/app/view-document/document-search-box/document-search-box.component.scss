@@ -1,0 +1,28 @@
+    .search_box {
+        background-color: #414f86;
+        transform: translateX(-50%);
+        position: absolute;
+        left: 50%;
+        border-radius: 60px;
+        .form-inline .form-control {
+            border-radius: 60px;
+            height: calc(1.5em + 0.55rem + 0px);
+            margin-left: 3px;
+        }
+        .btn-primary {
+            color: #fff;
+            background-color: #404d87;
+            border-color: #3f4b88;
+            outline: none;
+            &:last-child {
+                border-radius: 50px;
+            }
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+            .fa {
+                font-size: 20px;
+            }
+        }
+    }
