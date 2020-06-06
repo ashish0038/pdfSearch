@@ -100,12 +100,19 @@
                         <li><i class="fa fa-search"></i></li>
                         <li><i class="fa fa-plus"></i></li>
                         <li><i class="fa fa-minus"></i></li>
-                        <li><div class="w_text_value">4 <span>5</span></div></li>
+                        <li>
+                            <div class="w_text_value">4 <span>5</span></div>
+                        </li>
                     </ul>
                 </div>
                 <div class="overlay_tag"></div>
                 <div class="overlay_tag2"></div>
-                <img src="assets/images/WhatsApp Image 2020-06-04 at 11.57.11 PM.jpeg" class="image_loaded">
+                <div>
+                    <img src="assets/images/WhatsApp Image 2020-06-04 at 11.57.11 PM.jpeg" class="image_loaded">
+                    <app-high-lighted-section *ngIf="isDisplayighLightedSection"
+                        [heightlightedSection]="heightlightedSection"></app-high-lighted-section>
+                </div>
+
             </div>
         </div>
     </div>

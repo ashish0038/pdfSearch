@@ -1,17 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
+import { NavigationMenu } from 'src/app/models/navigation-menu';
+
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
-
-  menu$: Object;
-  setAtrr: boolean = false;
+  menu: Array<NavigationMenu>;
 
   constructor() {
-
   }
 
   someMethod(event: any) {
@@ -24,27 +23,18 @@ export class NavigationComponent implements OnInit {
             elementList[i].setAttribute("aria-hidden", "false");
           } else {
             elementList[i].setAttribute("aria-hidden", "true");
-          } 
+          }
         }
       }, 100);
     }
   }
 
-
   ngOnInit() {
-
-    const menu = [
-      {
-        label: 'My Documents',
-        icon: 'Documents',
-        link: '/home',
-      },
-      
-    ];
-
-    this.menu$ = menu;
-
-
+    this.menu = new Array<NavigationMenu>();
+    this.menu.push({
+      label: 'My Documents',
+      icon: 'Documents',
+      link: '#/home',
+    });
   }
-
 }

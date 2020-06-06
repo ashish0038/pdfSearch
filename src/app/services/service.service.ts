@@ -7,11 +7,6 @@ import { HttpClient } from '@angular/common/http';
 export class ServiceService {
 
   constructor() { }
-  
-  // // constructor(private http: HttpClient) { }
-  
-  // getUsers() {
-  //   return this.http.get('http://localhost:4200/assets/data/data.json')
-  // }
+
 
 }

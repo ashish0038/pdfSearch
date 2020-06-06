@@ -1,37 +1,40 @@
 import { Component, OnInit } from '@angular/core';
-import {ServiceService} from '../service.service';
 
-import { from } from 'rxjs';
+import { CertificateDetails } from 'src/app/models/certificate-detail';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  
   options = { autoHide: false, scrollbarMinSize: 100 };
-  certificate$: Object;  
+  certificate: Array<CertificateDetails>;
 
   constructor() { }
 
   ngOnInit() {
-     const data = [{
-      certificateName:'Certificate of Liability insurance',
-      certificateCreated:'2 Mar 2019'
-     },
-     {
-      certificateName:'Certificate of Liability insurance',
-      certificateCreated:'2 Oct 2019'
-     },
-     {
-      certificateName:'Certificate of Liability insurance',
-      certificateCreated:'2 Oct 2019'
-     },
-     {
-      certificateName:'Certificate of Liability insurance',
-      certificateCreated:'2 Oct 2019'
-     }
-    ]
-     this.certificate$ = data;
+    this.certificate = new Array<CertificateDetails>();
+
+    this.certificate.push({
+      certificateName: 'Certificate of Liability insurance',
+      certificateCreated: '2 Mar 2019'
+    });
+
+    this.certificate.push({
+      certificateName: 'Certificate of Liability insurance',
+      certificateCreated: '2 Oct 2019'
+    });
+
+    this.certificate.push({
+      certificateName: 'Certificate of Liability insurance',
+      certificateCreated: '2 Oct 2019'
+    });
+
+    this.certificate.push({
+      certificateName: 'Certificate of Liability insurance',
+      certificateCreated: '2 Oct 2019'
+    });
   }
 }

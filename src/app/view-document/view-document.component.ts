@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HighLightedSectionModel } from '../models/high-lighted-section.model';
 
 @Component({
   selector: 'app-view-document',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewDocumentComponent implements OnInit {
   options = { autoHide: false, scrollbarMinSize: 100 };
+  heightlightedSection: HighLightedSectionModel;
+  isDisplayighLightedSection:boolean = false;
+  
   constructor() { }
 
   ngOnInit() {

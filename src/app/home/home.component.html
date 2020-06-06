@@ -2,8 +2,8 @@
 <div class="news-box">
     <div class="news-scroll">
         <ngx-simplebar [options]="options">
-            <div class="news-list" *ngFor="let certificate of certificate$">
-                <a href="/view-document">{{ certificate.certificateName }}</a>
+            <div class="news-list" *ngFor="let certificate of certificate">
+                <a href="#/view-document">{{ certificate.certificateName }}</a>
                 <p class="news-created">{{ certificate.certificateCreated }}</p>
             </div>
         </ngx-simplebar>
