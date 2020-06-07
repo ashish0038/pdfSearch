@@ -8,9 +8,9 @@ describe('DocumentSearchBoxComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DocumentSearchBoxComponent ]
+      declarations: [DocumentSearchBoxComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

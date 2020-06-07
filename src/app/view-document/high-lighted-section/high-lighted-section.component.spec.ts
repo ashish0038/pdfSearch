@@ -8,9 +8,9 @@ describe('HighLightedSectionComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HighLightedSectionComponent ]
+      declarations: [HighLightedSectionComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

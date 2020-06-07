@@ -8,9 +8,9 @@ describe('PageNavigationBarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PageNavigationBarComponent ]
+      declarations: [PageNavigationBarComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

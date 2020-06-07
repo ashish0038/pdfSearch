@@ -8,9 +8,9 @@ describe('DocumentSearchIconComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DocumentSearchIconComponent ]
+      declarations: [DocumentSearchIconComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
