@@ -13,6 +13,7 @@ import { HighLightedSectionComponent } from './view-document/high-lighted-sectio
 import { DocumentSearchBoxComponent } from './view-document/document-search-box/document-search-box.component';
 import { DocumentSearchIconComponent } from './view-document/document-search-icon/document-search-icon.component';
 import { PageNavigationBarComponent } from './view-document/page-navigation-bar/page-navigation-bar.component';
+import { PageDetailComponent } from './view-document/page-navigation-bar/page-detail/page-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { PageNavigationBarComponent } from './view-document/page-navigation-bar/
     DocumentSearchBoxComponent,
     DocumentSearchIconComponent,
     PageNavigationBarComponent,
+    PageDetailComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+<div class="row align-items-start" *ngFor="let page of pageDetail">
+    <div class="col-sm-3">
+        <h2 class="page_number">Page {{page.pageNo}}</h2>
+    </div>
+    <div class="col-sm-9">
+        <div class="word-list" *ngFor="let pageDetail of page?.details">
+            <h2 class="word_list_code" (click)="highlightSection(pageDetail.headingCoordinate)">
+                {{pageDetail.headingText}}</h2>
+            <ul class="finding_words_list" *ngFor="let detailText of pageDetail?.detailText">
+                <li (click)="highlightSection(detailText.detailCoordinate)"> {{detailText.text}} </li>
+            </ul>
+        </div>
+    </div>
+</div>

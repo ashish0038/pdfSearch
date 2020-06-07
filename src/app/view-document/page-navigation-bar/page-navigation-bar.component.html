@@ -8,31 +8,12 @@
             <i class="fa fa-angle-down custom_arrow"></i>
         </div>
     </div>
-    <div class="word_section" *ngIf="!!DictionaryData && DictionaryData.length > 0">
-        <content *ngFor="let item of DictionaryData">
+    <div class="word_section" *ngIf="!!dictionaryData && dictionaryData.length > 0">
+        <content *ngFor="let item of dictionaryData">
             <div class="row align-items-center ">
                 <div class="col-sm-12">
                     <h2 class="word_title">{{item.title}}</h2>
-                    <content *ngIf="!!item.pageDetail">
-                        <div class="row align-items-start" *ngFor="let page of item.pageDetail">
-                            <div class="col-sm-3">
-                                <h2 class="page_number">Page {{page.pageNo}}</h2>
-                            </div>
-                            <div class="col-sm-9">
-                                <content *ngIf="!!page.details">
-                                    <div class="word-list" *ngFor="let pageDetail of page.details">
-                                        <h2 class="word_list_code" (click)="highlightSection(pageDetail.headingCoordinate)">{{pageDetail.headingText}}</h2>
-                                        <content *ngIf="!!pageDetail.detailText">
-                                            <ul class="finding_words_list"
-                                                *ngFor="let detailText of pageDetail.detailText">
-                                                <li (click)="highlightSection(detailText.detailCoordinate)"> {{detailText.text}} </li>
-                                            </ul>
-                                        </content>
-                                    </div>
-                                </content>
-                            </div>
-                        </div>
-                    </content>
+                    <app-page-detail [pageDetail]="item?.pageDetail" ></app-page-detail>
                 </div>
             </div>
         </content>
