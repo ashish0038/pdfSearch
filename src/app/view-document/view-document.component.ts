@@ -3,6 +3,7 @@ import { HighLightedSectionModel } from '../models/high-lighted-section.model';
 import { SearchDictionaryPageDetailModel } from '../models/Search-dictionary-page-detail.model';
 import { SearchDictionaryDetailModel } from '../models/search-dictionary-detail.model';
 import { PublisherSubscriberService } from '../services/pub.sub.service';
+import { ToastrMsgService } from '../services/toastr-msg.service';
 
 @Component({
   selector: 'app-view-document',
@@ -15,7 +16,8 @@ export class ViewDocumentComponent implements OnInit {
   isDisplayighLightedSection: boolean = false;
   dicionaryDetail: Array<SearchDictionaryDetailModel>;
 
-  constructor(private readonly pubsubService: PublisherSubscriberService) { }
+  constructor(private readonly pubsubService: PublisherSubscriberService,
+    private readonly toastrMsgService: ToastrMsgService) { }
 
   ngOnInit() {
     this.highlightSection();
@@ -66,17 +68,19 @@ export class ViewDocumentComponent implements OnInit {
 
   private highlightSection() {
     this.pubsubService.getHighLightObservable().subscribe(data => {
-      this.isDisplayighLightedSection = false;
       if (!!data) {
-        this.heightlightedSection = data;
-        this.isDisplayighLightedSection = true;
-        setTimeout(() => {
-          document.getElementById('highlighSection').scrollIntoView();
-        }, 0);
+        this.isDisplayighLightedSection = false;
+        if (!!data) {
+          this.heightlightedSection = data;
+          this.isDisplayighLightedSection = true;
+          setTimeout(() => {
+            document.getElementById('highlighSection').scrollIntoView();
+          }, 0);
+        }
       }
     }, error => {
       this.isDisplayighLightedSection = false;
-      console.log(error);
+      this.toastrMsgService.showError(error);
     });
   }
 }

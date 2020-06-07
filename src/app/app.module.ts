@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { SimplebarAngularModule } from 'simplebar-angular';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,7 +32,8 @@ import { PageDetailComponent } from './view-document/page-navigation-bar/page-de
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SimplebarAngularModule
+    SimplebarAngularModule,
+    ToastrModule.forRoot()
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
